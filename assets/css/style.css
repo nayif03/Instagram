@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;
+}
+
+body{
+     margin: 0 auto;
+     width: 80%;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    margin: 5% auto;
+}
+.profiImage{
+    width: 50%;
+    border-radius: 50%;
+}
+.username{
+    display: flex;
+    margin-bottom: 1em;
+}
+.username h1{
+    margin-right: 1em;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+}
+.username button{
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-right: 2em;
+    font-weight: 600;
+    background-color: rgba(128, 128, 128, 0.486);
+    border: 1px solid gray;
+    box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.555); 
+}
+
+nav{
+    margin-bottom: 1em;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    text-align: center;
+}
+
+
+
+
+#main{
+   display: flex;
+   flex-wrap: wrap;
+}
+.postImg{
+    width: 33%;
+    padding: 1em;
+}
+
+@media screen and (max-width:768px){
+    .postImg{
+        width: 50%;
+    }
+    .container nav{
+        margin-bottom: 1em;
+    }
+
+}
+@media screen and (max-width:414px){
+    .username{
+        flex-direction: column;
+    }
+    .username h1{
+        margin-bottom: 0.4em;
+    }
+    .profiImage{
+        width: 90%;
+        position: relative;
+    }
+    .icon{
+        position: absolute;
+        right: 1px;
+    }
+    .postImg{
+        width: 100%;
+        padding-bottom: 1em;
+        padding-right: 0;
+        padding-left: 0;
+    }
+    header{
+        justify-content: center;
+        position: relative;
+    }
+    #main{
+        position: relative;
+        margin-top: 60%;
+    }
+    
+   
+    .container nav{
+        border-top: 1px solid rgba(17, 17, 17, 0.562);
+        border-bottom: 1px solid rgba(36, 35, 35, 0.562);
+        padding: 1em ;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 14em;
+    }
+    .container p{
+        position: absolute;
+        left: 0;
+        top: 10em;
+       
+    }
+    
+}
